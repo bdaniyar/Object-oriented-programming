@@ -5,6 +5,7 @@ public class Task6 {
         System.out.println("Enter your word: ");
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
+        sc.close();
 
         String reversed = new StringBuilder(s).reverse().toString();
         // we use StringBuilder() because we cant change usual String(because its immutable)
