@@ -3,13 +3,11 @@ package Lab2;
 public class StarTriangle {
     private int width;
 
-    // Конструктор (width = сколько [*] в последней строке)
     public StarTriangle(int width) {
         this.width = width;
     }
 
-    // Метод который возвращает треугольник строкой
-    public String toString() {
+    public String toString() { // method to return the triangle as a string
         String result = "";
 
         for (int row = 1; row <= width; row++) {

@@ -25,6 +25,10 @@ public class Student {
     public int getYearOfStudy() {
         return yearOfStudy;
     }
+    @Override
+    public String toString(){
+        return name + ", id:" + id;
+    }
     public static void main(String[] args){
         Student s1 = new Student("Daniyar", 101);
         System.out.println(s1.getName());

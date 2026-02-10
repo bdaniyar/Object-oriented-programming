@@ -7,7 +7,6 @@ public class Time {
     private int second;
 
     public Time(int h, int m, int s) {
-        // Проверка (чтобы не было неправильного времени)
         if (h < 0 || h > 23 || m < 0 || m > 59 || s < 0 || s > 59) {
             System.out.println("Invalid time!");
             hour = 0;
@@ -24,7 +23,7 @@ public class Time {
         StringBuilder sb = new StringBuilder();
 
         if (hour < 10) sb.append("0");
-        sb.append(hour).append(":");
+        sb.append(hour).append(":"); // 05:
 
         if (minute < 10) sb.append("0");
         sb.append(minute).append(":");
@@ -65,7 +64,6 @@ public class Time {
         return sb.toString();
     }
 
-    // Простое сложение (instance method)
     public Time add(Time other) {
         int newHour = this.hour + other.hour;
         int newMinute = this.minute + other.minute;
