@@ -12,21 +12,21 @@ public class Data {
     }
 
     public void add(double value){
-        sum+=value;
+        sum += value;
         count++;
 
-        if(value>max){
+        if(value > max){
             max = value;
         }
     }
 
     public double getAverage(){
-        if(count==0) return 0.0;
+        if(count == 0) return 0.0;
         return sum / count;
     }
 
     public double getMaximum(){
-        if(count==0) return 0.0;
+        if(count == 0) return 0.0;
         return max;
     }
 }

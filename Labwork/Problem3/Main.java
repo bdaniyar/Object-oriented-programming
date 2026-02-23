@@ -12,7 +12,14 @@ public class Main {
         System.out.println("t2 in C = " + t2.getCelsius());
         System.out.println("t2 in F = " + t2.getFahrenheit());
 
-        // меняем значение
+        Temperature t = new Temperature(); // 0°C
+
+        t.setValue(25);        //  25°C
+        System.out.println(t.getCelsius());
+
+        t.setScale('F');       // 25°F
+        System.out.println(t.getFahrenheit());
+        
         t1.setBoth(100, 'F');
         System.out.println("t1 now in C = " + t1.getCelsius());
     }

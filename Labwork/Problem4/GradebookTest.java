@@ -27,7 +27,7 @@ public class GradebookTest {
 
             int id = readInt(sc, "ID: ", 1, 1_000_000);
 
-            // твой Student принимает только (name, id)
+            // (name, id)
             Student s = new Student(name, id);
             gb.addStudent(s);
 

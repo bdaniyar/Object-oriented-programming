@@ -4,6 +4,8 @@ public class Main {
     public static void main(String[] args){
         // static NON-final: changing
         Order.globalDiscount = 0.10;
+        
+        // object
 
         Order o1 = new Order("Daniyar");
         o1.addItem(100); // Overloading 1

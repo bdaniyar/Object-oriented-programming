@@ -7,7 +7,7 @@ public class Gradebook {
 
     private Course course;
     private ArrayList<Student> students;
-    private ArrayList<Integer> grades; // оценки храним тут
+    private ArrayList<Integer> grades; // grades saved in the same order as students
 
     public Gradebook(Course course) {
         this.course = course;
@@ -17,7 +17,7 @@ public class Gradebook {
 
     public void addStudent(Student s) {
         students.add(s);
-        grades.add(-1); // пока не введена
+        grades.add(-1); // -1 means no grade assigned yet
     }
 
     public void setGrade(int index, int grade) {
@@ -31,12 +31,12 @@ public class Gradebook {
         return students.get(index);
     }
 
-    // ===== required by lab =====
+    // required by lab 
     public void displayMessage() {
         System.out.println("Welcome to the grade book for " + course.getName());
     }
 
-    // ===== calculations =====
+    // calculations
     public double determineClassAverage() {
         if (grades.isEmpty()) return 0.0;
 
@@ -61,7 +61,7 @@ public class Gradebook {
         return worst;
     }
 
-    // ===== statistics (bar chart like in example) =====
+    // statistics 
     public void outputBarChart() {
         int[] freq = new int[11]; // 0..10
 
@@ -82,23 +82,6 @@ public class Gradebook {
         }
     }
 
-    // optional: letter grades frequency (как просили)
-    public void outputLetterStats() {
-        int a=0,b=0,c=0,d=0,f=0;
-        for (int g : grades) {
-            if (g >= 90) a++;
-            else if (g >= 80) b++;
-            else if (g >= 70) c++;
-            else if (g >= 60) d++;
-            else f++;
-        }
-        System.out.println("Letter grade stats:");
-        System.out.println("A: " + a);
-        System.out.println("B: " + b);
-        System.out.println("C: " + c);
-        System.out.println("D: " + d);
-        System.out.println("F: " + f);
-    }
 
     public void displayGradeReport() {
         displayMessage();
@@ -110,8 +93,6 @@ public class Gradebook {
         System.out.println("Lowest grade is " + grades.get(worst) + " (" + students.get(worst) + ").");
         System.out.println("Highest grade is " + grades.get(best) + " (" + students.get(best) + ").");
 
-        System.out.println();
-        outputLetterStats();
         System.out.println();
         outputBarChart();
     }

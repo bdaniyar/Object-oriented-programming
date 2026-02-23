@@ -1,17 +1,17 @@
 package Labwork.Problem2;
 
 public class Order {
+    // non final
     private static int nextId = 1;
     public static double globalDiscount = 0.0;
 
-    // static final
     public static final int MAX_ITEMS = 10;
     public static final double TAX = 0.12;
 
-    // read-only fields (final)
     private final int id;
     private final String customer;
 
+    // read only
     private OrderStatus status;
     private int items;
     private double sum;
@@ -21,7 +21,7 @@ public class Order {
         items = 0;
         sum = 0.0;
     }
-
+    // constructor chaining , if order without customer name
     public Order(){
         this("Unknown");
     }
@@ -41,7 +41,7 @@ public class Order {
         return status;
     }
 
-    // Overloading 
+    
     public void addItem(double price){
         addItem(price,1);
     }

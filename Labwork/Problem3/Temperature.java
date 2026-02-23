@@ -29,19 +29,19 @@ public class Temperature {
         this.scale = Character.toUpperCase(scale);
     }
 
-    // -------- get in Celsius --------
+    // get in Celsius
     public double getCelsius() {
         if (scale == 'C') return value;
         return 5 * (value - 32) / 9;
     }
 
-    // -------- get in Fahrenheit --------
+    // get in Fahrenheit
     public double getFahrenheit() {
         if (scale == 'F') return value;
         return 9 * value / 5 + 32;
     }
 
-    // -------- setters --------
+    // setters
     public void setValue(double value) {
         this.value = value;
     }
@@ -55,7 +55,7 @@ public class Temperature {
         this.scale = Character.toUpperCase(scale);
     }
 
-    // -------- get scale --------
+    // get scale
     public char getScale() {
         return scale;
     }
