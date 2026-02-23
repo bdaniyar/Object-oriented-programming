@@ -1,7 +1,7 @@
 package Labwork.Problem4;
 
 import java.util.Scanner;
-import Lab2.Student;
+import pr2.Student;
 
 public class GradebookTest {
 
