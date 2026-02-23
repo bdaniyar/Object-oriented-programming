@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "MainApp",
+            "request": "launch",
+            "mainClass": "pr3.delivery.app.MainApp",
+            "projectName": "OOP_ab13f9a7"
+        },
+        {
+            "type": "java",
+            "name": "MainApp",
+            "request": "launch",
+            "mainClass": "MainApp",
+            "projectName": "OOP_ab13f9a7"
+        },
+        {
+            "type": "java",
+            "name": "Student",
+            "request": "launch",
+            "mainClass": "Student",
+            "projectName": "OOP_ab13f9a7"
+        },
+        {
+            "type": "java",
+            "name": "StarTriangle",
+            "request": "launch",
+            "mainClass": "StarTriangle",
+            "projectName": "OOP_ab13f9a7"
+        }
+    ]
+}

@@ -1,5 +1,3 @@
-package pr2;
-
 public class Time {
 
     private int hour;
@@ -22,16 +20,13 @@ public class Time {
     public String toUniversal() {
         StringBuilder sb = new StringBuilder();
 
-        if (hour < 10)
-            sb.append("0");
+        if (hour < 10) sb.append("0");
         sb.append(hour).append(":"); // 05:
 
-        if (minute < 10)
-            sb.append("0");
+        if (minute < 10) sb.append("0");
         sb.append(minute).append(":");
 
-        if (second < 10)
-            sb.append("0");
+        if (second < 10) sb.append("0");
         sb.append(second);
 
         return sb.toString();
@@ -53,16 +48,13 @@ public class Time {
             amPm = "PM";
         }
 
-        if (standardHour < 10)
-            sb.append("0");
+        if (standardHour < 10) sb.append("0");
         sb.append(standardHour).append(":");
 
-        if (minute < 10)
-            sb.append("0");
+        if (minute < 10) sb.append("0");
         sb.append(minute).append(":");
 
-        if (second < 10)
-            sb.append("0");
+        if (second < 10) sb.append("0");
         sb.append(second);
 
         sb.append(" ").append(amPm);
@@ -95,12 +87,12 @@ public class Time {
     public static void main(String[] args) {
         Time t = new Time(23, 5, 6);
         System.out.println(t.toUniversal()); // 23:05:06
-        System.out.println(t.toStandard()); // 11:05:06 PM
+        System.out.println(t.toStandard());  // 11:05:06 PM
 
         Time t2 = new Time(4, 24, 33);
 
         Time sum = t.add(t2);
         System.out.println(sum.toUniversal()); // 03:29:39
-        System.out.println(sum.toStandard()); // 03:29:39 AM
+        System.out.println(sum.toStandard());  // 03:29:39 AM
     }
 }

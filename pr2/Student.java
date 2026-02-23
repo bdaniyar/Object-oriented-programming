@@ -1,11 +1,11 @@
-package pr2;
+
 
 public class Student {
     private String name;
     private int id;
     private int yearOfStudy;
 
-    public Student(String name, int id) {
+    public Student(String name, int id ){
         this.name = name;
         this.id = id;
         this.yearOfStudy = 1;
@@ -20,19 +20,16 @@ public class Student {
     }
 
     public void incrementYear() {
-        yearOfStudy++;
+       yearOfStudy++;
     }
-
     public int getYearOfStudy() {
         return yearOfStudy;
     }
-
     @Override
-    public String toString() {
+    public String toString(){
         return name + ", id:" + id;
     }
-
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Student s1 = new Student("Daniyar", 101);
         System.out.println(s1.getName());
         System.out.println(s1.getId());

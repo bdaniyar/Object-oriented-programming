@@ -1,4 +1,4 @@
-package Labwork.Problem1;
+package Problem1;
 
 public class Data {
     private double sum;

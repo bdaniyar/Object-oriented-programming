@@ -1,0 +1,11 @@
+{
+    "java.project.sourcePaths": [
+        "pr2",
+        "pr1",
+        "Labwork",
+        "src/pr3/animal/app",
+        "src"
+    ],
+    "java.project.referencedLibraries": [],
+    "commentTranslate.targetLanguage": "en"
+}
