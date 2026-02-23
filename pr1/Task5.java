@@ -1,3 +1,5 @@
+package pr1;
+
 public class Task5 {
     public static void main(String[] args){
         double balance = 1500.0;

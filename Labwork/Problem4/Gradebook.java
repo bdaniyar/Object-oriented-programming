@@ -31,24 +31,27 @@ public class Gradebook {
         return students.get(index);
     }
 
-    // required by lab 
+    // required by lab
     public void displayMessage() {
         System.out.println("Welcome to the grade book for " + course.getName());
     }
 
     // calculations
     public double determineClassAverage() {
-        if (grades.isEmpty()) return 0.0;
+        if (grades.isEmpty())
+            return 0.0;
 
         int sum = 0;
-        for (int g : grades) sum += g;
+        for (int g : grades)
+            sum += g;
         return (double) sum / grades.size();
     }
 
     public int getBestIndex() {
         int best = 0;
         for (int i = 1; i < grades.size(); i++) {
-            if (grades.get(i) > grades.get(best)) best = i;
+            if (grades.get(i) > grades.get(best))
+                best = i;
         }
         return best;
     }
@@ -56,18 +59,21 @@ public class Gradebook {
     public int getWorstIndex() {
         int worst = 0;
         for (int i = 1; i < grades.size(); i++) {
-            if (grades.get(i) < grades.get(worst)) worst = i;
+            if (grades.get(i) < grades.get(worst))
+                worst = i;
         }
         return worst;
     }
 
-    // statistics 
+    // statistics
     public void outputBarChart() {
         int[] freq = new int[11]; // 0..10
 
         for (int g : grades) {
-            if (g == 100) freq[10]++;
-            else freq[g / 10]++;
+            if (g == 100)
+                freq[10]++;
+            else
+                freq[g / 10]++;
         }
 
         System.out.println("Grades distribution:");
@@ -77,11 +83,11 @@ public class Gradebook {
             } else {
                 System.out.printf("%02d-%02d: ", i * 10, i * 10 + 9);
             }
-            for (int k = 0; k < freq[i]; k++) System.out.print("*");
+            for (int k = 0; k < freq[i]; k++)
+                System.out.print("*");
             System.out.println();
         }
     }
-
 
     public void displayGradeReport() {
         displayMessage();

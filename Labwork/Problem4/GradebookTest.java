@@ -12,8 +12,7 @@ public class GradebookTest {
                 "CS101",
                 "Object-Oriented Programming",
                 5,
-                new java.util.ArrayList<>()
-        );
+                new java.util.ArrayList<>());
 
         Gradebook gb = new Gradebook(course);
 
