@@ -10,13 +10,11 @@ public class Truck extends Vehicle {
 
     @Override
     public double calculateDeliveryCost() {
-        // пример: базовая цена + наценка за грузоподъёмность
         return baseCost + maxLoad * 2.0;
     }
 
     // overload
     public double calculateDeliveryCost(double distance, double fuelPrice) {
-        // пример: доп расчёт по дистанции и цене топлива
         return calculateDeliveryCost() + distance * fuelPrice;
     }
 

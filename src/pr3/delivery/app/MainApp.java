@@ -34,7 +34,6 @@ public class MainApp {
         double total = service.calculateTotalCost(vehicles);
         System.out.println("Total: " + total);
 
-        // --- демонстрация overload (не через Vehicle, а через конкретный тип) ---
         System.out.println("\n=== Overload demo ===");
         System.out.println("Car with extra weight (20.5): " + car1.calculateDeliveryCost(20.5));
         System.out.println("Truck with distance+fuelPrice (120, 3.2): " + truck1.calculateDeliveryCost(120, 3.2));

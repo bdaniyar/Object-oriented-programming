@@ -11,12 +11,10 @@ public abstract class Vehicle {
         this.engine = engine;
     }
 
-    // базовая реализация (можно простую)
     public double calculateDeliveryCost() {
         return baseCost;
     }
-
-    // Важно: показываем композицию — выводим engine.getEngineInfo()
+    
     public String getVehicleInfo() {
         return "Vehicle{model='" + model + "', baseCost=" + baseCost + ", " + engine.getEngineInfo() + "}";
     }
