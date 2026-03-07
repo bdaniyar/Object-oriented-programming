@@ -1,10 +1,12 @@
 {
     "java.project.sourcePaths": [
+        "src/pr3/animal/app",
+        "src",
         "pr2",
         "pr1",
         "Labwork",
-        "src/pr3/animal/app",
-        "src"
+        "midterm/inheritance&pol",
+        "."
     ],
     "java.project.referencedLibraries": [],
     "commentTranslate.targetLanguage": "en"

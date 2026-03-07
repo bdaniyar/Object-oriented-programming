@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "midterm.leaks.Lessons2.Main",
+            "projectName": "OOP_ab13f9a7"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "midterm.leaks.Lessons.Main",
+            "projectName": "OOP_ab13f9a7"
+        },
+        {
+            "type": "java",
+            "name": "skelet",
+            "request": "launch",
+            "mainClass": "skelet",
+            "projectName": "OOP_ab13f9a7"
+        },
+        {
+            "type": "java",
             "name": "MainApp",
             "request": "launch",
             "mainClass": "pr3.delivery.app.MainApp",
