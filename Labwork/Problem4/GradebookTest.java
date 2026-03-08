@@ -27,7 +27,7 @@ public class GradebookTest {
             int id = readInt(sc, "ID: ", 1, 1_000_000);
 
             // (name, id)
-            Student s = new Student(name, id);
+            Car s = new Car(name, id);
             gb.addStudent(s);
 
             int grade = readInt(sc, "Grade (0-100): ", 0, 100);

@@ -6,7 +6,7 @@ import pr2.Student;
 public class Gradebook {
 
     private Course course;
-    private ArrayList<Student> students;
+    private ArrayList<Car> students;
     private ArrayList<Integer> grades; // grades saved in the same order as students
 
     public Gradebook(Course course) {
@@ -15,7 +15,7 @@ public class Gradebook {
         this.grades = new ArrayList<>();
     }
 
-    public void addStudent(Student s) {
+    public void addStudent(Car s) {
         students.add(s);
         grades.add(-1); // -1 means no grade assigned yet
     }
@@ -27,7 +27,7 @@ public class Gradebook {
         grades.set(index, grade);
     }
 
-    public Student getStudent(int index) {
+    public Car getStudent(int index) {
         return students.get(index);
     }
 
