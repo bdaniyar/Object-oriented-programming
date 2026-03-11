@@ -16,5 +16,7 @@ public class Queen extends Piece {
                 Math.abs(a.col - b.col);
 
         return rookMove || bishopMove;
+        // combines the moves of Rook and Bishop
+        // horizontal, vertical, diagonal move
     }
 }

@@ -10,6 +10,7 @@ public class Rook extends Piece {
     public boolean isLegalMove(Position b){
 
         return a.row == b.row || a.col == b.col;
+        // horizontal , vertical move
 
     }
 }

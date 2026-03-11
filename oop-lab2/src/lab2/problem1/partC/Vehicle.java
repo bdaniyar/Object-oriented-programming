@@ -41,13 +41,9 @@ public class Vehicle {
     // equals
     @Override
     public boolean equals(Object o) {
-
         if (this == o) return true;
-
         if (o == null || getClass() != o.getClass()) return false;
-
         Vehicle vehicle = (Vehicle) o;
-
         return year == vehicle.year &&
                 Objects.equals(brand, vehicle.brand);
     }

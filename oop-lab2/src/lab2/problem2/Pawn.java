@@ -11,6 +11,7 @@ public class Pawn extends Piece {
 
         return b.row == a.row + 1 &&
                b.col == a.col;
+        // can move one square forward
 
     }
 }

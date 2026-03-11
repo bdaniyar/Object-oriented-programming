@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "lab2.problem1.partB.Main",
+            "projectName": "OOP_ab13f9a7"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "lab2.problem1.partA.Main",
+            "projectName": "OOP_ab13f9a7"
+        },
+        {
+            "type": "java",
             "name": "PetTest",
             "request": "launch",
             "mainClass": "lab2.problem5.PetTest",

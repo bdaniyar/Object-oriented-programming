@@ -13,5 +13,6 @@ public class King extends Piece {
         int colDiff = Math.abs(a.col - b.col);
 
         return rowDiff <= 1 && colDiff <= 1;
+        // can move one square in any direction
     }
 }

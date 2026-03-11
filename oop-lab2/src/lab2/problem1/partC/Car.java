@@ -21,11 +21,8 @@ public class Car extends Vehicle {
 
     @Override
     public boolean equals(Object o) {
-
         if (!super.equals(o)) return false;
-
         Car car = (Car) o;
-
         return Objects.equals(model, car.model);
     }
 
