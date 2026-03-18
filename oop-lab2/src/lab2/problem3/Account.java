@@ -10,11 +10,15 @@ public class Account {
     }
 
     public void deposit(double sum){
-        balance += sum;
+        if (sum > 0) {
+            balance += sum;
+        }
     }
 
     public void withdraw(double sum){
-        balance -= sum;
+        if(sum > 0 && sum < balance){
+            balance -= sum;
+        }
     }
 
     public double getBalance(){
@@ -29,6 +33,11 @@ public class Account {
         withdraw(amount);
         other.deposit(amount);
     }
+
+    // @Override
+    // public boolean equals(Object o){
+    //     if((! o instanceof ))
+    // }
 
     @Override
     public String toString(){

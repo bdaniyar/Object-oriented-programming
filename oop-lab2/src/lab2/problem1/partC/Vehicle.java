@@ -42,10 +42,10 @@ public class Vehicle {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof Vehicle)) return false;
         Vehicle vehicle = (Vehicle) o;
         return year == vehicle.year &&
-                Objects.equals(brand, vehicle.brand);
+            Objects.equals(brand, vehicle.brand);
     }
 
     // hashCode

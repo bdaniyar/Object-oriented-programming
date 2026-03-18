@@ -4,6 +4,48 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "bonustask.interfaces.main.Main",
+            "projectName": "OOP_ab13f9a7"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "problem4.Main",
+            "projectName": "OOP_ab13f9a7"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "problem3.Main",
+            "projectName": "OOP_ab13f9a7"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "problem2.Main",
+            "projectName": "OOP_ab13f9a7"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "problem1.Main",
+            "projectName": "OOP_ab13f9a7"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "OOP_ab13f9a7"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "lab2.problem1.partB.Main",
             "projectName": "OOP_ab13f9a7"
         },
