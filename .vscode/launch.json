@@ -2,6 +2,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ExpressionAppPr5",
+            "request": "launch",
+            "mainClass": "io.app.ExpressionAppPr5",
+            "projectName": "OOP_ab13f9a7"
+        },
+        {
+            "type": "java",
+            "name": "TemperatureAppPr4",
+            "request": "launch",
+            "mainClass": "io.app.TemperatureAppPr4",
+            "projectName": "OOP_ab13f9a7"
+        },
+        {
+            "type": "java",
+            "name": "LibraryAppPr3",
+            "request": "launch",
+            "mainClass": "io.app.LibraryAppPr3",
+            "projectName": "OOP_ab13f9a7"
+        },
+        {
+            "type": "java",
+            "name": "WordFrequencyAppPr2",
+            "request": "launch",
+            "mainClass": "io.app.WordFrequencyAppPr2",
+            "projectName": "OOP_ab13f9a7"
+        },
+        {
+            "type": "java",
+            "name": "SafeDivider",
+            "request": "launch",
+            "mainClass": "problem1.io.app.SafeDivider",
+            "projectName": "OOP_ab13f9a7"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "bonustask.interfaces.main.Main",

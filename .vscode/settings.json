@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
-        "pr4"
+        "pr4",
+        "pr5"
     ],
     "java.project.referencedLibraries": [],
     "commentTranslate.targetLanguage": "en",

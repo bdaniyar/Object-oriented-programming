@@ -1,8 +1,6 @@
 package problem2;
 public class Student extends Person implements CanHavePizza, CanHaveRetake, Movable{
-    
-    public Student(){
-    }
+
     @Override
     public void eatPizza(){
         System.out.println("Student eats pizza");
