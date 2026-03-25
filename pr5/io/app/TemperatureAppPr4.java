@@ -62,5 +62,6 @@ public class TemperatureAppPr4 {
 
         System.out.println("Average: " + average);
         System.out.println("Max: " + max);
+        System.out.println("Total readings: " + count);
     }
 }

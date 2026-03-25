@@ -1,9 +1,11 @@
 package lab2.problem2;
 
+import lab2.problem2.Bonus.Color;
+
 public class Knight extends Piece {
 
-    public Knight(Position a){
-        super(a);
+    public Knight(Position a, Color color){
+        super(a, color);
     }
 
     @Override

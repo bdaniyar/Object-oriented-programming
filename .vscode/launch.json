@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SafeDividerPr1",
+            "request": "launch",
+            "mainClass": "io.app.SafeDividerPr1",
+            "projectName": "OOP_ab13f9a7"
+        },
+        {
+            "type": "java",
             "name": "ExpressionAppPr5",
             "request": "launch",
             "mainClass": "io.app.ExpressionAppPr5",

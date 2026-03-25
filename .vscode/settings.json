@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
+        "oop-lab2/src",
         "pr4",
         "pr5"
     ],

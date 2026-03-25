@@ -1,9 +1,11 @@
 package lab2.problem2;
 
+import lab2.problem2.Bonus.Color;
+
 public class Queen extends Piece {
 
-    public Queen(Position a){
-        super(a);
+    public Queen(Position a, Color color){
+        super(a, color);
     }
 
     @Override

@@ -1,5 +1,4 @@
 package io.app;
-
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -12,9 +11,7 @@ import io.model.BookPr3;
 
 public class LibraryAppPr3 {
     public static void main(String[] args) {
-
         ArrayList<BookPr3> library = new ArrayList<>();
-
         // LOAD from file
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("library.dat"))) {
             Object obj = ois.readObject();
@@ -55,12 +52,10 @@ public class LibraryAppPr3 {
             } else if (choice.equals("L")) {
 
                 for (BookPr3 book : library) {
-                    book.incrementVisit(); // увеличиваем счётчик
+                    book.incrementVisit(); // increment visit count each time it's listed
                     System.out.println(book);
                 }
-
             } else if (choice.equals("Q")) {
-
                 // SAVE to file
                 try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("library.dat"))) {
                     oos.writeObject(library);
@@ -69,11 +64,9 @@ public class LibraryAppPr3 {
                 } catch (IOException e) {
                     System.out.println("Error saving file.");
                 }
-
                 break;
             }
         }
-
         scanner.close();
     }
 }
