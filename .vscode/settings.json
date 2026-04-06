@@ -1,10 +1,11 @@
 {
     "java.project.sourcePaths": [
         "oop-lab2/src",
-        "pr4",
+        "lab3",
         "pr5"
     ],
     "java.project.referencedLibraries": [],
+    "java.project.outputPath": "bin",
     "commentTranslate.targetLanguage": "en",
     "java.debug.settings.onBuildFailureProceed": false
 }

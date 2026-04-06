@@ -2,6 +2,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TestProblem6",
+            "request": "launch",
+            "mainClass": "problem6.TestProblem6",
+            "projectName": "OOP"
+        },
+        {
+            "type": "java",
+            "name": "SortTest",
+            "request": "launch",
+            "mainClass": "problem5.SortTest",
+            "projectName": "OOP"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "problem4.Main",
+            "projectName": "OOP"
+        },
+        {
+            "type": "java",
+            "name": "TestProblem6",
+            "request": "launch",
+            "mainClass": "TestProblem6",
+            "projectName": "OOP"
+        },
+        {
+            "type": "java",
+            "name": "SortTest",
+            "request": "launch",
+            "mainClass": "SortTest",
+            "projectName": "OOP"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "OOP"
+        },
+        {
+            "type": "java",
             "name": "SafeDividerPr1",
             "request": "launch",
             "mainClass": "io.app.SafeDividerPr1",

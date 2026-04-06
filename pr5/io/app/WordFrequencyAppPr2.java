@@ -17,7 +17,9 @@ public class WordFrequencyAppPr2 {
             while ((line = reader.readLine()) != null) {
                 // remove punctuation and make lowercase
                 line = line.replaceAll("[^a-zA-Z0-9 ]", "").toLowerCase();
+                // split into words
                 String[] words = line.split("\\s+");
+                // count words
                 for (String word : words) {
                     if (!word.isEmpty()) {
                         wordCount.put(word, wordCount.getOrDefault(word, 0) + 1);
@@ -32,6 +34,7 @@ public class WordFrequencyAppPr2 {
         List<Map.Entry<String, Integer>> sortedList = new ArrayList<>(wordCount.entrySet());
         sortedList.sort((a, b) -> b.getValue().compareTo(a.getValue()));
         try (PrintWriter writer = new PrintWriter(new FileWriter("report.txt"))) {
+            // write report
             for (Map.Entry<String, Integer> entry : sortedList) {
                 writer.println(entry.getKey() + " : " + entry.getValue());
             }
