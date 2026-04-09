@@ -6,7 +6,7 @@ interface MyCollection<T> {
     void remove(T element);
 
     boolean contains(T element);
-
+    
     int size();
 
     boolean isEmpty();

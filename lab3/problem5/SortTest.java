@@ -16,7 +16,7 @@ public class SortTest {
         Sort.bubbleSort(chocolates);
         System.out.println("Chocolates sorted:");
         System.out.println(Arrays.toString(chocolates));
-         // 🔹 Time test
+         //  Time test
         Time[] times = {
                 new Time(10, 30, 0),
                 new Time(9, 45, 0),
@@ -26,7 +26,7 @@ public class SortTest {
         Sort.mergeSort(times);
         System.out.println("\nTimes sorted:");
         System.out.println(Arrays.toString(times));
-        // 🔹 Employee test
+        // Employee test
         Employee[] employees = {
                 new Employee("A", 5000, new java.util.Date(), "1"),
                 new Employee("B", 3000, new java.util.Date(), "2"),

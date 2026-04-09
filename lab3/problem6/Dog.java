@@ -7,7 +7,6 @@ class Dog extends Animal implements Trainable, Comparable<Dog> {
     private int level;
 
     public Dog(String name, int level) {
-        // Animal from lab2.problem5 expects (name, age). We reuse level as age here.
         super(name, level);
         this.level = level;
     }

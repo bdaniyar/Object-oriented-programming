@@ -5,7 +5,7 @@ import java.util.*;
 public class TestProblem6 {
     public static void main(String[] args) {
 
-        // ===== EMPLOYEE TEST =====
+        // EMPLOYEE TEST 
         Employee e1 = new Employee("Alice", 0, 5000);
         Employee e2 = new Employee("Bob", 0, 7000);
 
@@ -17,7 +17,7 @@ public class TestProblem6 {
         Employee clone = e1.clone();
         System.out.println("Clone: " + clone);
 
-        // ===== DOG TEST =====
+        //  DOG TEST
         Dog d1 = new Dog("Rex", 2);
         Dog d2 = new Dog("Max", 5);
 
@@ -28,7 +28,7 @@ public class TestProblem6 {
 
         System.out.println("Compare dogs: " + d1.compareTo(d2));
 
-        // ===== SORT TEST =====
+        // SORT TEST
         List<Employee> list = new ArrayList<>();
         list.add(e1);
         list.add(e2);

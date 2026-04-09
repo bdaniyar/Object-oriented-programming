@@ -36,7 +36,7 @@ public class Employee extends Person implements Comparable<Employee>, Cloneable 
                 ", hireDate=" + hireDate +
                 ", insuranceNumber='" + insuranceNumber + "'}";
     }
-
+    // first check super.equals() to compare name, then check salary and insuranceNumber
     @Override
     public boolean equals(Object o) {
         if (!super.equals(o))

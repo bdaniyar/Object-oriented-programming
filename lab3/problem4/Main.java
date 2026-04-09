@@ -4,26 +4,25 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-
-        // 🔹 Создание сотрудников
+        // create employees
         Employee e1 = new Employee("Alice", 5000, new Date(), "123");
         Employee e2 = new Employee("Bob", 7000, new Date(), "456");
 
-        // 🔹 Создание менеджера
+        // create manager
         Manager m1 = new Manager("John", 7000, new Date(), "789", 2000);
         m1.addEmployee(e1);
         m1.addEmployee(e2);
 
-        // 🔹 equals
+        // equals
         System.out.println("\nEQUALS TEST");
         Employee e3 = new Employee("Alice", 5000, new Date(), "123");
         System.out.println("e1 equals e3: " + e1.equals(e3));
 
-        // 🔹 Comparable
+        // Comparable
         System.out.println("\n COMPARABLE TEST (salary)");
-        System.out.println("e1 vs e2: " + e1.compareTo(e2)); // -1 ожидаемо
+        System.out.println("e1 vs e2: " + e1.compareTo(e2)); // -1 because e1 salary < e2 salary
 
-        // 🔹 Comparator (name)
+        // Comparator (name)
         List<Employee> list = new ArrayList<>();
         list.add(e1);
         list.add(e2);
@@ -34,27 +33,27 @@ public class Main {
             System.out.println(e);
         }
 
-        // 🔹 Comparator (date)
+        // Comparator (date)
         System.out.println("\nSORT BY HIRE DATE");
         Collections.sort(list, new HireDateComparator());
         for (Employee e : list) {
             System.out.println(e);
         }
 
-        // 🔹 Clone Employee
+        //  Clone Employee
         System.out.println("\nCLONE EMPLOYEE (shallow)");
         Employee eClone = e1.clone();
         System.out.println("Original: " + e1);
         System.out.println("Clone:    " + eClone);
 
-        // 🔹 Clone Manager (DEEP)
+        // Clone Manager (DEEP)
         System.out.println("\nCLONE MANAGER (deep)");
         Manager mClone = m1.clone();
 
         System.out.println("Original manager: " + m1);
         System.out.println("Cloned manager:  " + mClone);
 
-        // 🔥 Проверка deep clone
+        // deep clone
         mClone.addEmployee(new Employee("NEW", 1000, new Date(), "999"));
 
         System.out.println("\nAfter modifying clone:");
